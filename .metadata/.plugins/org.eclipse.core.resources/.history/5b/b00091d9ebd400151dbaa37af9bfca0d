@@ -1,0 +1,9 @@
+import java.util.Enumeration;
+import java.util.Iterator;
+
+public class EnumerationIteratorAdaptor<E> implements Enumeration<E> {
+
+	private Iterator<Coordenada> enumeration;
+
+
+}

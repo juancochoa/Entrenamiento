@@ -1,0 +1,7 @@
+
+public class GumbalMachine {
+	HasQuarterState hasQuarterState;
+	NoQuarterState noQuarterState;
+	SoldOutState soldOutState;
+	WinnerState winerState;
+}

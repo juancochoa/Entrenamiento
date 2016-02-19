@@ -1,0 +1,8 @@
+
+public class HasQuarterState {
+	private GumbalMachine gumbalMachine;
+
+	public HasQuarterState(GumbalMachine gumbalMachine) {
+		gumbalMachine = gumbalMachine;
+	}
+}

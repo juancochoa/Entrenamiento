@@ -1,0 +1,84 @@
+
+public class GumbalMachine {
+	private State hasQuarterState;
+	private State noQuarterState;
+	private State soldOutState;
+	private State winerState;
+	private State state = soldOutState;
+	private int count = 0;
+
+	public GumbalMachine(int count) {
+		hasQuarterState=new HasQuarterState(this);
+		noQuarterState=new NoQuarterState(this);
+		soldOutState=new SoldOutState(this);
+		this.winerState = winerState;
+	}
+
+	public void insertQuarter() {
+		state.insertQuarter();
+	}
+
+	public void ejectQuarter() {
+		state.ejectQuarter();
+	}
+
+	public void turnCrank() {
+		state.turnCrank();
+		state.dispense();
+	}
+
+	public void setCount(int count) {
+		this.count = count;
+	}
+
+	public int getCount() {
+		return count;
+	}
+
+	public State getHasQuarterState() {
+		return hasQuarterState;
+	}
+
+	public void setHasQuarterState(State hasQuarterState) {
+		this.hasQuarterState = hasQuarterState;
+	}
+
+	public State getNoQuarterState() {
+		return noQuarterState;
+	}
+
+	public void setNoQuarterState(State noQuarterState) {
+		this.noQuarterState = noQuarterState;
+	}
+
+	public State getSoldOutState() {
+		return soldOutState;
+	}
+
+	public void setSoldOutState(State soldOutState) {
+		this.soldOutState = soldOutState;
+	}
+
+	public State getWinerState() {
+		return winerState;
+	}
+
+	public void setWinerState(State winerState) {
+		this.winerState = winerState;
+	}
+
+	public State getState() {
+		return state;
+	}
+
+	public void setState(State state) {
+		this.state = state;
+	}
+	
+	public void releaseBall(){
+		System.out.println("A gumball comes rolling out the slot...");
+		if (count>0) {
+			count=count-1;
+		}
+	}
+}

@@ -1,0 +1,27 @@
+
+public class Singleton {
+	private static Singleton uniqueInstance;
+	private String nombre;
+
+	private Singleton() {
+	}
+
+	public static Singleton getInstance() {
+		if (uniqueInstance == null) {
+			uniqueInstance = new Singleton();
+		}
+		return uniqueInstance;
+	}
+
+	public void imprimir() {
+		System.out.println("oe " + this.nombre);
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+}

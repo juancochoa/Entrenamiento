@@ -1,0 +1,11 @@
+import java.util.ArrayList;
+
+public class IteratorSimulator {
+	public static void main(String[] args) {
+		DinerMenu dinerMenu = new DinerMenu();
+		PancakeHouseMenu pancakeHouseMenu = new PancakeHouseMenu();
+		Arraylist<Menu> menus = new ArrayList();
+		Waitress waitress = new Waitress(menus);
+		waitress.printMenu();
+	}
+}

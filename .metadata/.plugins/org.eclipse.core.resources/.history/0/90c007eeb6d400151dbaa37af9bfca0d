@@ -1,0 +1,7 @@
+
+public class Stereo{
+	public void On(){
+		System.out.println("Musica sonando");
+	}
+
+}

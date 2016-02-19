@@ -1,0 +1,5 @@
+
+public class Waitress {
+	Menu dinerMenu;
+	Menu pancakeHouseMenu;
+}

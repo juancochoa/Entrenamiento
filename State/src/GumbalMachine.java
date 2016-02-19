@@ -11,6 +11,9 @@ public class GumbalMachine {
 		noQuarterState = new NoQuarterState(this);
 		soldOutState = new SoldOutState(this);
 		this.count = count;
+		if (this.count > 0) {
+			state=NoQuarterState;
+		}
 	}
 
 	public void insertQuarter() {

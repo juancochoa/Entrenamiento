@@ -1,0 +1,28 @@
+
+public class GumbalMachine {
+	State hasQuarterState;
+	State noQuarterState;
+	State soldOutState;
+	State winerState;
+
+	public GumbalMachine(HasQuarterState hasQuarterState, NoQuarterState noQuarterState, SoldOutState soldOutState,
+			WinnerState winerState) {
+		super();
+		this.hasQuarterState = hasQuarterState;
+		this.noQuarterState = noQuarterState;
+		this.soldOutState = soldOutState;
+		this.winerState = winerState;
+	}
+	public void insertQuarter(){
+		
+	}
+	public void ejectQuarter(){
+		
+	}
+	public void turnCrank(){
+		
+	}
+	public void dispense(){
+		
+	}
+}

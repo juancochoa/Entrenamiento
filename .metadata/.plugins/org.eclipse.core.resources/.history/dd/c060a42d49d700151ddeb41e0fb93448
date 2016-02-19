@@ -1,0 +1,8 @@
+
+public class HasQuarterState {
+	private GumbalMachine gumbalMachine;
+
+	public HasQuarterState() {
+		// TODO Auto-generated constructor stub
+	}
+}

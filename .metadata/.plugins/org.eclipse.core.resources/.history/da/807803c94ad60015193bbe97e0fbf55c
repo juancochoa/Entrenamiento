@@ -1,0 +1,19 @@
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class PancakeHouseMenu implements Menu {
+	ArrayList<MenuItem> menuItems;
+	
+	public PancakeHouseMenu() {
+		
+	}
+
+	@Override
+	public Iterator<MenuItem> createIterator() {
+		return menuItems.iterator();
+	}
+	private void addItem(MenuItem item){
+		menuItems.add(item);
+	}
+
+}

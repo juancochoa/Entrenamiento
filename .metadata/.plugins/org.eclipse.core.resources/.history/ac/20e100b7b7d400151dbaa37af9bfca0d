@@ -1,0 +1,14 @@
+
+public class StereoOnCommand implements Command {
+
+	Stereo stereo;
+	
+	public void execute() {
+		stereo.On();
+	}
+
+	public void undo() {
+		stereo.Off();
+	}
+
+}

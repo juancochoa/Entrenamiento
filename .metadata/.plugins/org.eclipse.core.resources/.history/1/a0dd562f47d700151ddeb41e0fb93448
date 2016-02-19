@@ -1,0 +1,17 @@
+
+public class GumbalMachine {
+	HasQuarterState hasQuarterState;
+	NoQuarterState noQuarterState;
+	SoldOutState soldOutState;
+	WinnerState winerState;
+
+	public GumbalMachine(HasQuarterState hasQuarterState, NoQuarterState noQuarterState, SoldOutState soldOutState,
+			WinnerState winerState) {
+		super();
+		this.hasQuarterState = hasQuarterState;
+		this.noQuarterState = noQuarterState;
+		this.soldOutState = soldOutState;
+		this.winerState = winerState;
+	}
+
+}

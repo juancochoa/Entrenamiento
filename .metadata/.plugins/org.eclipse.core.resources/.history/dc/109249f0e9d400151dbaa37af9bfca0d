@@ -1,0 +1,23 @@
+import java.util.Enumeration;
+import java.util.Iterator;
+
+public class EnumerationIteratorAdaptor<E> implements Iterator {
+	
+	private Enumeration enumeration;
+	
+	public EnumerationIteratorAdaptor(Enumeration enumeration) {
+		this.enumeration=enumeration;
+	}
+	@Override
+	public boolean hasNext() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public E next() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

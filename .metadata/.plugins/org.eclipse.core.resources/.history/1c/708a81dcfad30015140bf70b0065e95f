@@ -1,0 +1,7 @@
+
+public class SingletonSimulator {
+	public static void main(String[] args) {
+		Singleton prueba=Singleton.getInstance();
+		prueba.imprimir();
+	}
+}

@@ -1,0 +1,11 @@
+import java.util.Iterator;
+
+public class PancakeHouseMenu implements Menu{
+
+	@Override
+	public Iterator<MenuItem> createIterator() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

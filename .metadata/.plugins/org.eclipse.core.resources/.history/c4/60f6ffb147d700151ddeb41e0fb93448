@@ -1,0 +1,41 @@
+
+public class GumbalMachine {
+	State hasQuarterState;
+	State noQuarterState;
+	State soldOutState;
+	State winerState;
+	State state = soldOutState;
+	int count = 0;
+
+	public GumbalMachine(State hasQuarterState, State noQuarterState, State soldOutState, State winerState) {
+		super();
+		this.hasQuarterState = hasQuarterState;
+		this.noQuarterState = noQuarterState;
+		this.soldOutState = soldOutState;
+		this.winerState = winerState;
+	}
+
+	public void insertQuarter() {
+		state.insertQuarter();
+	}
+
+	public void ejectQuarter() {
+		state.ejectQuarter();
+	}
+
+	public void turnCrank() {
+
+	}
+
+	public void dispense() {
+
+	}
+
+	public void setCount(int count) {
+		this.count = count;
+	}
+
+	public int getCount() {
+		return count;
+	}
+}

@@ -1,0 +1,32 @@
+
+public class HasQuarterState implements State{
+	private GumbalMachine gumbalMachine;
+
+	public HasQuarterState(GumbalMachine gumbalMachine) {
+		this.gumbalMachine = gumbalMachine;
+	}
+
+	@Override
+	public void insertQuarter() {
+		System.out.println("no se pueden insertar dos monedas");
+	}
+
+	@Override
+	public void ejectQuarter() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void turnCrank() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void dispense() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

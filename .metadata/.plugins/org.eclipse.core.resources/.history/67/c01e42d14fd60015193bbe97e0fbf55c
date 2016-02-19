@@ -1,0 +1,18 @@
+
+public class Waitress {
+	Menu dinerMenu;
+	Menu pancakeHouseMenu;
+
+	public Waitress(Menu dinerMenu, Menu pancakeHouseMenu) {
+		this.dinerMenu = dinerMenu;
+		this.pancakeHouseMenu = pancakeHouseMenu;
+	}
+
+	public void printMenu() {
+
+	}
+
+	public void printMenu(Iterator iterator) {
+
+	}
+}

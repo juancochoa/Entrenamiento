@@ -1,0 +1,9 @@
+
+public class HasQuarterState implements State{
+	private GumbalMachine gumbalMachine;
+
+	public HasQuarterState(GumbalMachine gumbalMachine) {
+		this.gumbalMachine = gumbalMachine;
+	}
+	
+}
