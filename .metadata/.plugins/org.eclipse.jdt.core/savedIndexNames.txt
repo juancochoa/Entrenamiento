@@ -1,3 +1,0 @@
-INDEX VERSION 1.127+/Entrenamiento/.metadata/.plugins/org.eclipse.jdt.core
-19835774.index
-3813153954.index
