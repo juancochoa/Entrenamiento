@@ -12,7 +12,7 @@ public class GumbalMachine {
 		soldOutState = new SoldOutState(this);
 		this.count = count;
 		if (this.count > 0) {
-			state=noQuarterState;
+			state=NoQuarterState;
 		}
 	}
 
