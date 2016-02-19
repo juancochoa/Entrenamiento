@@ -20,7 +20,7 @@ public class HasQuarterState implements State {
 	@Override
 	public void turnCrank() {
 		System.out.println("You turned...");
-		gumbalMachine.setState(gumbalMachine.getSoldState());
+		gumbalMachine.setState(gumbalMachine.getSoldOutState());
 	}
 
 	@Override

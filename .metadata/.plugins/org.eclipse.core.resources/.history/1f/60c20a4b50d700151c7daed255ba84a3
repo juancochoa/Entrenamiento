@@ -8,11 +8,5 @@ public class StateSimulator {
 		gumbalMachine.turnCrank();
 		gumbalMachine.insertQuarter();
 		gumbalMachine.turnCrank();
-		gumbalMachine.insertQuarter();
-		gumbalMachine.turnCrank();
-		gumbalMachine.insertQuarter();
-		gumbalMachine.turnCrank();
-		gumbalMachine.insertQuarter();
-		gumbalMachine.turnCrank();
 	}
 }
