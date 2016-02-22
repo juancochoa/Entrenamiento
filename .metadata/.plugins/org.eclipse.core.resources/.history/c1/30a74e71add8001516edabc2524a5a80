@@ -1,0 +1,7 @@
+
+public class ProxySimulator {
+	public static void main(String[] args) {
+		ProxySimulator proxy=new ProxySimulator();
+		proxy.drive();
+	}
+}

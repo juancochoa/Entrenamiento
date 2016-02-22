@@ -1,0 +1,7 @@
+
+public interface PersonBean {
+	String getName();
+	String getGender();
+	String getInterests();
+	int getHotOrNotRating();
+}

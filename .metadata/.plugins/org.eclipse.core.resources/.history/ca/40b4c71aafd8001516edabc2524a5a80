@@ -1,0 +1,16 @@
+import java.lang.reflect.Proxy;
+
+
+public class ProxySimulator {
+	public static void main(String[] args) {
+		ProxySimulator proxy=new ProxySimulator();
+		proxy.drive();
+	}
+
+	private void drive() {
+		
+	}
+	private PersonBean getOwnerProxy(PersonBean person){
+		return Proxy.newProxyInstance(person.getClass().getClassLoader(), person.getClass().getInterfaces(),new OwnerInvocationHandler(person));
+	}
+}

@@ -1,0 +1,46 @@
+import java.lang.reflect.Proxy;
+
+public class ProxySimulator {
+	public static void main(String[] args) {
+		ProxySimulator proxy = new ProxySimulator();
+		proxy.drive();
+	}
+
+	private void drive() {
+		PersonBean Joe = new PersonBeanImpl();
+		Joe.setGender("M");
+		Joe.setName("Joe");
+		Joe.setInterests("Bowling, Soccer");
+		Joe.setHotOrNotRating(4);
+		System.out.println(Joe.getInterests());
+		PersonBean ownerProxy = getOwnerProxy(Joe);
+		System.out.println("Name is " + ownerProxy.getName());
+		ownerProxy.setInterests("Basket");
+		System.out.println("New interests " + ownerProxy.getInterests());
+		try {
+			ownerProxy.setHotOrNotRating(8);
+		} catch (Exception e) {
+			System.out.println("Can't set rating from owner proxy");
+		}
+		System.out.println("Rating is " + ownerProxy.getHotOrNotRating());
+		PersonBean noOwnerProxy = getNoOwnerProxy(Joe);
+		System.out.println("Name is " + noOwnerProxy.getName());
+		try {
+			noOwnerProxy.setInterests("Bowling, Soccer");
+		} catch (Exception e) {
+			System.out.println("Can't set interests from no owner proxy");
+		}
+	}
+
+	private PersonBean getOwnerProxy(PersonBean person) {
+		return (PersonBean) Proxy.newProxyInstance(person.getClass()
+				.getClassLoader(), person.getClass().getInterfaces(),
+				new OwnerInvocationHandler(person));
+	}
+
+	private PersonBean getNoOwnerProxy(PersonBean person) {
+		return (PersonBean) Proxy.newProxyInstance(person.getClass()
+				.getClassLoader(), person.getClass().getInterfaces(),
+				new NoOwnerInvocationHandler(person));
+	}
+}

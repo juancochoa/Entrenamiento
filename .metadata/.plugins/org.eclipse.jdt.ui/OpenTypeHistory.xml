@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
-<typeInfo handle="=pruebaJavaObserver/\/usr\/lib\/jvm\/java-8-oracle\/jre\/lib\/rt.jar&lt;java.util(Observer.class[Observer" modifiers="1537" timestamp="1455119519000"/>
-<typeInfo handle="=pruebaJavaObserver/\/usr\/lib\/jvm\/java-8-oracle\/jre\/lib\/rt.jar&lt;java.util(Observable.class[Observable" modifiers="33" timestamp="1455119519000"/>
-<typeInfo handle="=Command/src&lt;{Command.java[Command" modifiers="513" timestamp="1455655733000"/>
-<typeInfo handle="=Adapter/\/usr\/lib\/jvm\/java-8-oracle\/jre\/lib\/rt.jar&lt;java.util(Iterator.class[Iterator" modifiers="1537" timestamp="1455119519000"/>
+<typeInfo handle="=Command/src&lt;{Command.java[Command" modifiers="513" timestamp="1455670205000"/>
+<typeInfo handle="=Proxy/\/usr\/lib\/jvm\/java-8-oracle\/jre\/lib\/rt.jar&lt;java.lang.reflect(InvocationHandler.class[InvocationHandler" modifiers="1537" timestamp="1455077102000"/>
 </typeInfoHistroy>

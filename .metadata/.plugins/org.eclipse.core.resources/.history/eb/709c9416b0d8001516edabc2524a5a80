@@ -1,0 +1,27 @@
+import java.lang.reflect.Proxy;
+
+public class ProxySimulator {
+	public static void main(String[] args) {
+		ProxySimulator proxy = new ProxySimulator();
+		proxy.drive();
+	}
+
+	private void drive() {
+		PersonBean Joe=new PersonBeanImpl();
+		Joe.setGender("M");
+		Joe.setName("Joe");
+		Joe.setInterests("Bowling, Soccer");
+		Joe.setHotOrNotRating(4);
+		}
+
+	private PersonBean getOwnerProxy(PersonBean person) {
+		return (PersonBean) Proxy.newProxyInstance(person.getClass()
+				.getClassLoader(), person.getClass().getInterfaces(),
+				new OwnerInvocationHandler(person));
+	}
+	private PersonBean getNoOwnerProxy(PersonBean person) {
+		return (PersonBean) Proxy.newProxyInstance(person.getClass()
+				.getClassLoader(), person.getClass().getInterfaces(),
+				new NoOwnerInvocationHandler(person));
+	}
+}
