@@ -15,5 +15,7 @@ public class BuilderSimulator {
 		NutritionFacts cocaCola = new NutritionFacts.Builder(240, 8).calories(100).sodium(35).carbohydrate(37).build();
 		System.out.println(cocaCola.getCarbohydrate());
 		System.out.println(Currency.DIME.getValue());
+		char prueba = 0;
+		System.out.println((int)prueba);
 	}
 }

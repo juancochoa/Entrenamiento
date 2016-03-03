@@ -1,0 +1,9 @@
+package optional;
+
+import java.util.List;
+
+public class simulacionOptional {
+	public static void main(String[] args) {
+		List <Fruta> frutas=Arrays.asList(new Fruta());
+	}
+}

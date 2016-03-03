@@ -46,4 +46,6 @@
 <fullyQualifiedTypeName name="java.lang.Override"/>
 <fullyQualifiedTypeName name="java.lang.UnsupportedOperationException"/>
 <fullyQualifiedTypeName name="java.lang.reflect.InvocationTargetException"/>
+<fullyQualifiedTypeName name="NutritionFacts"/>
+<fullyQualifiedTypeName name="NutritionFacts.Builder"/>
 </qualifiedTypeNameHistroy>
