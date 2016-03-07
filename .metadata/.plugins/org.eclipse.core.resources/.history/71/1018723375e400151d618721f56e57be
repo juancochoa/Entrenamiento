@@ -1,0 +1,9 @@
+package com.servlet.propio;
+
+public class JerseyClient {
+	private static final String URI = "http://localhost:8080/servlet-platzi";
+
+	public static void main(String[] args) {
+		ClientConfig config = new ClientConfig();
+	}
+}

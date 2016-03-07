@@ -1,12 +1,13 @@
 package com.servlet.propio;
 
+
+
 import javax.xml.bind.annotation.XmlRootElement;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 //@JsonIgnoreProperties(value={"tamaño"})
-@XmlRootElement 
 public class Mensaje {
 	private String descripcion;
 	private int tamaño;

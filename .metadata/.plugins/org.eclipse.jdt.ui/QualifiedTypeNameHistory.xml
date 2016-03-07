@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.util.SimpleTimeZone"/>
-<fullyQualifiedTypeName name="javax.swing.SingleSelectionModel"/>
-<fullyQualifiedTypeName name="FlyBehavior.FlyBehavior"/>
-<fullyQualifiedTypeName name="MallarDuck"/>
-<fullyQualifiedTypeName name="FlyBehavior.FlyWithWings"/>
-<fullyQualifiedTypeName name="QuackBehavior.Quack"/>
-<fullyQualifiedTypeName name="QuackBehavior.QuackBehavior"/>
-<fullyQualifiedTypeName name="QuackBehavior.MuteQuack"/>
-<fullyQualifiedTypeName name="Duck.MallarDuck"/>
 <fullyQualifiedTypeName name="Duck.Duck"/>
 <fullyQualifiedTypeName name="java.util.Observable"/>
 <fullyQualifiedTypeName name="pruebaJavaObserver.CurrentConditionsDisplay"/>
@@ -59,4 +50,14 @@
 <fullyQualifiedTypeName name="java.util.Comparator"/>
 <fullyQualifiedTypeName name="java.util.Collections"/>
 <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
+<fullyQualifiedTypeName name="com.sun.jersey.api.client.config.ClientConfig"/>
+<fullyQualifiedTypeName name="org.glassfish.jersey.client.ClientConfig"/>
+<fullyQualifiedTypeName name="javax.ws.rs.client.ClientBuilder"/>
+<fullyQualifiedTypeName name="javax.ws.rs.client.WebTarget"/>
+<fullyQualifiedTypeName name="com.sun.mail.iap.Response"/>
+<fullyQualifiedTypeName name="com.servlet.propio.Jersey"/>
+<fullyQualifiedTypeName name="javax.xml.bind.annotation.XmlRootElement"/>
+<fullyQualifiedTypeName name="javax.ws.rs.client.Entity"/>
+<fullyQualifiedTypeName name="javax.ws.rs.core.MediaType"/>
+<fullyQualifiedTypeName name="javax.ws.rs.core.UriBuilder"/>
 </qualifiedTypeNameHistroy>

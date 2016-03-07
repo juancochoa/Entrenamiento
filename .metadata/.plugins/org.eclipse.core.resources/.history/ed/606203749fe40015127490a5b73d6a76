@@ -1,0 +1,29 @@
+package com.servlet.propio;
+
+import javax.ws.rs.client.Client;
+import javax.ws.rs.client.ClientBuilder;
+import javax.ws.rs.client.WebTarget;
+import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.UriBuilder;
+import javax.ws.rs.core.Response;
+import org.glassfish.jersey.client.ClientConfig;
+import java.net.URI;
+
+public class JerseyClient {
+
+	public static void main(String[] args) {
+		ClientConfig config = new ClientConfig();
+		Client client = ClientBuilder.newClient(config);
+		WebTarget target = client.target(getBaseURI());
+		Mensaje msj = target.path("vamos/6").request().accept(MediaType.APPLICATION_JSON).get(Mensaje.class);
+		Response response=target.request(MediaType.TEXT_PLAIN_TYPE).post(null);
+		System.out.println(msj.getDescripcion());
+		System.out.println(msj.getTamaño());
+		System.out.println(response.getStatus());
+		System.out.println(response.readEntity(String.class));
+	}
+
+	private static URI getBaseURI() {
+		return UriBuilder.fromUri("http://localhost:8080/servlet-platzi/rest/jersey").build();
+	}
+}
