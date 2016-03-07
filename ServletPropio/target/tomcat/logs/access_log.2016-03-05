@@ -1,0 +1,5 @@
+127.0.0.1 - - [05/Mar/2016:18:15:11 -0500] "GET /servlet-platiz HTTP/1.1" 404 - http-bio-8080-exec-1 0
+127.0.0.1 - - [05/Mar/2016:18:15:14 -0500] "GET /servlet-platzi HTTP/1.1" 302 - http-bio-8080-exec-2 0
+127.0.0.1 - - [05/Mar/2016:18:15:14 -0500] "GET /servlet-platzi/ HTTP/1.1" 404 981 http-bio-8080-exec-3 22
+127.0.0.1 - - [05/Mar/2016:18:15:20 -0500] "GET /servlet-platzi/hello HTTP/1.1" 200 23 http-bio-8080-exec-4 5
+127.0.0.1 - - [05/Mar/2016:18:15:48 -0500] "GET /servlet-platzi/hello?mensaje=vamosabuela HTTP/1.1" 200 30 http-bio-8080-exec-5 2

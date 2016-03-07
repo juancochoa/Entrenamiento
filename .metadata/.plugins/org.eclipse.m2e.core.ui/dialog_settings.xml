@@ -14,6 +14,7 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="/home/camilo/Streams"/>
 			<item value="/Entrenamiento/platziJava-master"/>
 		</list>
 		<list key="projectNameTemplate">

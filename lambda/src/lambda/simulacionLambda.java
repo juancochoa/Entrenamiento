@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
+import java.util.stream.Stream;
 
 public class simulacionLambda {
 	public static void main(String[] args) {
@@ -31,6 +32,10 @@ public class simulacionLambda {
 		stringCollection.add("bbb2");
 		stringCollection.add("ddd1");
 		
-		stringCollection.stream().filter((s)->s.startsWith("aa")).forEach(System.out::println);
+		
+		Stream<String> stream=stringCollection.stream();
+		stream.filter((s)->s.startsWith("aa")).forEach(System.out::println);
+		stream.filter((s)->s.startsWith("ddd")).forEach(System.out::println);
+
 	}
 }
