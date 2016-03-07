@@ -79,7 +79,6 @@ INDEX VERSION 1.127+/Entrenamiento/.metadata/.plugins/org.eclipse.jdt.core
 535812757.index
 475894673.index
 2554499301.index
-436411927.index
 957849032.index
 3884018930.index
 3813153954.index
