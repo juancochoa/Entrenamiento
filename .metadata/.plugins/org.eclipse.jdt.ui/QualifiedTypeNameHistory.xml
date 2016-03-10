@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.util.Observable"/>
-<fullyQualifiedTypeName name="pruebaJavaObserver.CurrentConditionsDisplay"/>
-<fullyQualifiedTypeName name="pruebaJavaObserver.WeatherData"/>
-<fullyQualifiedTypeName name="pruebaJavaObserver.ObserverSimulation"/>
-<fullyQualifiedTypeName name="java.lang.StringIndexOutOfBoundsException"/>
-<fullyQualifiedTypeName name="Subject"/>
-<fullyQualifiedTypeName name="Observer"/>
-<fullyQualifiedTypeName name="WeatherData"/>
-<fullyQualifiedTypeName name="Espresso"/>
 <fullyQualifiedTypeName name="DecoratorSimulator"/>
 <fullyQualifiedTypeName name="Milk"/>
 <fullyQualifiedTypeName name="CondimentDecorator"/>
@@ -38,14 +29,11 @@
 <fullyQualifiedTypeName name="NutritionFacts.Builder"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="optional.Fruta"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.Iterator"/>
 <fullyQualifiedTypeName name="java.util.Optional"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.util.stream.Stream"/>
 <fullyQualifiedTypeName name="java.util.stream.Collector"/>
 <fullyQualifiedTypeName name="javax.print.attribute.standard.JobOriginatingUserName"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="java.util.Comparator"/>
 <fullyQualifiedTypeName name="java.util.Collections"/>
 <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
@@ -60,4 +48,16 @@
 <fullyQualifiedTypeName name="javax.ws.rs.core.MediaType"/>
 <fullyQualifiedTypeName name="javax.ws.rs.core.UriBuilder"/>
 <fullyQualifiedTypeName name="javax.ws.rs.DefaultValue"/>
+<fullyQualifiedTypeName name="rx.Observable.OnSubscribe"/>
+<fullyQualifiedTypeName name="rx.Observable"/>
+<fullyQualifiedTypeName name="rx.Subscriber"/>
+<fullyQualifiedTypeName name="java.lang.Throwable"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.util.concurrent.Callable"/>
+<fullyQualifiedTypeName name="java.util.concurrent.Executors"/>
+<fullyQualifiedTypeName name="java.util.concurrent.ExecutorService"/>
+<fullyQualifiedTypeName name="java.util.concurrent.Future"/>
+<fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>

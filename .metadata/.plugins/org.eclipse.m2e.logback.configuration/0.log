@@ -1054,3 +1054,15 @@
 2016-03-09 09:21:31,802 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Entrenamiento/platziJava-master/platziJava-master/servlet/src/main/resources
 2016-03-09 09:21:31,803 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 2016-03-09 09:21:31,803 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Entrenamiento/platziJava-master/platziJava-master/servlet/src/test/resources
+2016-03-10 09:07:59,633 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-10 09:07:59,663 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Entrenamiento/platziJava-master/platziJava-master/dependency-injection/src/main/resources
+2016-03-10 09:07:59,665 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-10 09:07:59,665 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Entrenamiento/platziJava-master/platziJava-master/dependency-injection/src/test/resources
+2016-03-10 09:08:00,640 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-10 09:08:00,640 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/camilo/Streams/src/main/resources
+2016-03-10 09:08:00,642 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-10 09:08:00,642 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/camilo/Streams/src/test/resources
+2016-03-10 09:08:01,792 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-10 09:08:01,792 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Entrenamiento/platziJava-master/platziJava-master/servlet/src/main/resources
+2016-03-10 09:08:01,793 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-10 09:08:01,794 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Entrenamiento/platziJava-master/platziJava-master/servlet/src/test/resources

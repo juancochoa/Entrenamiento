@@ -1,0 +1,79 @@
+
+GitBucket 3.8
+Pull requests Issues
+Fork 0
+davidgiraldo / AcompanamientoSatelital-BackEnd
+
+AcompanamientoSatelital-BackEnd / acompanamientoSatelitalWEB / src / main / java / com / sura / asa / controladores / CargaArchivoContratosController.java
+David Giraldo Jaramillo 20 days ago Actualizacion Servicios GruposFacturacion
+Edit Raw Blame History Delete
+
+    package com.sura.asa.controladores;
+     
+    import java.io.IOException;
+    import java.io.InputStream;
+    import java.util.List;
+     
+    import javax.ws.rs.Consumes;
+    import javax.ws.rs.POST;
+    import javax.ws.rs.Path;
+    import javax.ws.rs.container.AsyncResponse;
+    import javax.ws.rs.container.Suspended;
+    import javax.ws.rs.core.MediaType;
+     
+    import org.glassfish.jersey.media.multipart.FormDataContentDisposition;
+    import org.glassfish.jersey.media.multipart.FormDataParam;
+     
+    import rx.Observable;
+    import rx.functions.Action1;
+    import rx.schedulers.Schedulers;
+     
+    import com.sura.asa.model.Contrato;
+    import com.sura.asa.model.GrupoFacturacion;
+    import com.sura.asa.resultados.ContratoCreado;
+    import com.sura.asa.resultados.ResultadoCreacionContrato;
+    import com.sura.asa.servicios.ContratoServicio;
+    import com.sura.asa.servicios.FacturaServicio;
+     
+    @Path("/cargadearchivos")
+    public class CargaArchivoContratosController {
+    	private static final String EXTENSIONES_ARCHIVO_PERMITIDAS = "xls|xlsx";
+     
+    	@POST
+    	@Path("/contratos")
+    	@Consumes(MediaType.MULTIPART_FORM_DATA)
+    	public void cargarArchivoContratos(@Suspended AsyncResponse ar, @FormDataParam("file") InputStream fileInputStream,
+    			@FormDataParam("file") FormDataContentDisposition contentDispositionHeader) {
+    		String nombreArchivo = contentDispositionHeader.getFileName();
+    		String extensionArchivo = nombreArchivo.lastIndexOf(".") == -1 ? null : nombreArchivo.substring(nombreArchivo.lastIndexOf(".") + 1,
+    				nombreArchivo.length());
+    		Observable<ResultadoCreacionContrato> obsResultados = null;
+    		List<ResultadoCreacionContrato> resultados = null;
+     
+    		if (extensionArchivo != null && EXTENSIONES_ARCHIVO_PERMITIDAS.contains(extensionArchivo)) {
+     
+    			
+    			ContratoServicio contratoServicio = new ContratoServicio();
+    			Observable<Contrato> contratos = contratoServicio.leerContratosDesdeArchivo(fileInputStream);
+    			resultados = contratoServicio.crearContratos(contratos);
+    			obsResultados = Observable.from(resultados);
+    			Observable<ContratoCreado> contratosCreados = obsResultados.ofType(ContratoCreado.class);
+    			final FacturaServicio facturaServicio = new FacturaServicio();
+    			contratosCreados.subscribeOn(Schedulers.computation()).subscribe(new Action1<ContratoCreado>() {
+    				@Override
+    				public void call(ContratoCreado contratoCreado) {
+    					GrupoFacturacion grupoFacturacionPorDefecto = facturaServicio.obtenerGrupoPorDefectoPersonaContrato(contratoCreado.getContrato());
+    					facturaServicio.crearPreFacturaAContrato(contratoCreado.getContrato(),grupoFacturacionPorDefecto);
+    				}
+    			});		
+    			try {
+    				fileInputStream.close();
+    			} catch (IOException e) {
+    				e.printStackTrace();
+    			}
+    		}
+    		ar.resume(resultados);
+    	}
+    }
+
+
