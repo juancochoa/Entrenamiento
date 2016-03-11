@@ -120,7 +120,8 @@ public class Rx {
 		// System.out.print("result: " + result);
 		Observable.timer(20, TimeUnit.SECONDS).subscribe(t->System.out.println(t));
 		Observable.just(1,2,3,4,5).scan(5,(x,y)->x+y).subscribe(t->System.out.println(t));
-
+		Observable.just(2, 4).ignoreElements().subscribe(t->System.out.println(t),y->System.out.println("error"+y.getMessage()),()->System.out.println("completado"));
+		
 	}
 	public static void prueba(){
 		System.out.println("esta entrando a la función");

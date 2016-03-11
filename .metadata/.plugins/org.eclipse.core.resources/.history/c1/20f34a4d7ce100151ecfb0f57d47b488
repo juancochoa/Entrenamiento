@@ -1,9 +1,0 @@
-package optional;
-
-public class Fruta {
-	private String nombre;
-
-	public String getNombre() {
-		return nombre;
-	}
-}

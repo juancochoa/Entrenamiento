@@ -1,7 +1,0 @@
-package optional;
-
-public class simulacionOptional {
-	public static void main(String[] args) {
-
-	}
-}
