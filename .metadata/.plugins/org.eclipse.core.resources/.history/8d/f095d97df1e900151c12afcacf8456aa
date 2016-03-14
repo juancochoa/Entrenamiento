@@ -1,0 +1,12 @@
+package com.copa.archivos;
+
+import javax.ws.rs.ApplicationPath;
+
+import org.glassfish.jersey.media.multipart.MultiPart;
+import org.glassfish.jersey.server.ResourceConfig;
+@ApplicationPath("pdf")
+public class AppConfig extends ResourceConfig{
+	public AppConfig() {
+		register(MultiPart.class);
+	}
+}

@@ -1,0 +1,20 @@
+package com.copa.archivos;
+
+import java.util.HashSet;
+import java.util.Set;
+
+import javax.ws.rs.ApplicationPath;
+import javax.ws.rs.core.Application;
+
+import org.glassfish.jersey.media.multipart.MultiPart;
+import org.glassfish.jersey.media.multipart.MultiPartFeature;
+import org.glassfish.jersey.server.ResourceConfig;
+@ApplicationPath("pdf")
+public class AppConfig extends Application{
+	public Set<Class<?>> AppConfig() {
+		final Set<Class<?>> resources = new HashSet<Class<?>>();
+        resources.add(ArchivoJersey.class);
+        resources.add(MultiPartFeature.class);
+        return resources;
+	}
+}

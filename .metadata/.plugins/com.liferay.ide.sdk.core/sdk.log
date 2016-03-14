@@ -1,0 +1,17 @@
+Buildfile: /home/camilo/Descargas/liferay-plugins-sdk-6.2/portlets/build.xml
+    [mkdir] Created dir: /home/camilo/Descargas/liferay-plugins-sdk-6.2/.ivy
+    [mkdir] Created dir: /root/.liferay/mirrors/cdn.repository.liferay.com/nexus/content/repositories/liferay-snapshots-ce/com/liferay/org.apache.ivy/2.4.0.LIFERAY-PATCHED-1-SNAPSHOT
+      [get] Getting: http://mirrors.lax.liferay.com/cdn.repository.liferay.com/nexus/content/repositories/liferay-snapshots-ce/com/liferay/org.apache.ivy/2.4.0.LIFERAY-PATCHED-1-SNAPSHOT/org.apache.ivy-2.4.0.LIFERAY-PATCHED-1-SNAPSHOT.jar
+      [get] To: /root/.liferay/mirrors/cdn.repository.liferay.com/nexus/content/repositories/liferay-snapshots-ce/com/liferay/org.apache.ivy/2.4.0.LIFERAY-PATCHED-1-SNAPSHOT/org.apache.ivy-2.4.0.LIFERAY-PATCHED-1-SNAPSHOT.jar
+      [get] Error getting http://mirrors.lax.liferay.com/cdn.repository.liferay.com/nexus/content/repositories/liferay-snapshots-ce/com/liferay/org.apache.ivy/2.4.0.LIFERAY-PATCHED-1-SNAPSHOT/org.apache.ivy-2.4.0.LIFERAY-PATCHED-1-SNAPSHOT.jar to /root/.liferay/mirrors/cdn.repository.liferay.com/nexus/content/repositories/liferay-snapshots-ce/com/liferay/org.apache.ivy/2.4.0.LIFERAY-PATCHED-1-SNAPSHOT/org.apache.ivy-2.4.0.LIFERAY-PATCHED-1-SNAPSHOT.jar
+      [get] Getting: http://cdn.repository.liferay.com/nexus/content/repositories/liferay-snapshots-ce/com/liferay/org.apache.ivy/2.4.0.LIFERAY-PATCHED-1-SNAPSHOT/org.apache.ivy-2.4.0.LIFERAY-PATCHED-1-SNAPSHOT.jar
+      [get] To: /root/.liferay/mirrors/cdn.repository.liferay.com/nexus/content/repositories/liferay-snapshots-ce/com/liferay/org.apache.ivy/2.4.0.LIFERAY-PATCHED-1-SNAPSHOT/org.apache.ivy-2.4.0.LIFERAY-PATCHED-1-SNAPSHOT.jar
+     [copy] Copying 1 file to /home/camilo/Descargas/liferay-plugins-sdk-6.2/.ivy
+[ivy:resolve] :: Apache Ivy 2.4.0 - 20141213170938 :: http://ant.apache.org/ivy/ ::
+[ivy:resolve] :: loading settings :: file = /home/camilo/Descargas/liferay-plugins-sdk-6.2/ivy-settings.xml
+create:
+     [copy] Copying 11 files to /Entrenamiento/.metadata/.plugins/com.liferay.ide.sdk.core/create/1457992972723/ejemploPortlet-portlet
+    [mkdir] Created dir: /Entrenamiento/.metadata/.plugins/com.liferay.ide.sdk.core/create/1457992972723/ejemploPortlet-portlet/docroot/WEB-INF/tld
+     [copy] Copying 7 files to /Entrenamiento/.metadata/.plugins/com.liferay.ide.sdk.core/create/1457992972723/ejemploPortlet-portlet/docroot/WEB-INF/tld
+BUILD SUCCESSFUL
+Total time: 4 minutes 32 seconds

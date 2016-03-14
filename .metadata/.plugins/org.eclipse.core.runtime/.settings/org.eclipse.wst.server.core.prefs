@@ -1,0 +1,2 @@
+eclipse.preferences.version=1
+runtimes=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<runtimes>\n  <runtime id\="Liferay v6.2 CE (Tomcat 7)" location\="/home/camilo/Descargas/tutorial/liferay-portal-6.2-ce-ga6/tomcat-7.0.62" name\="Liferay v6.2 CE (Tomcat 7)" runtime-type-id\="com.liferay.ide.server.62.tomcat.runtime.70" timestamp\="0"/>\n</runtimes>\n

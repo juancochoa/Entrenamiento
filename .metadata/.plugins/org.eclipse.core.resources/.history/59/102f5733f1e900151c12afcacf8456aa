@@ -1,0 +1,5 @@
+package com.copa.archivos;
+
+public class AppConfig {
+
+}
